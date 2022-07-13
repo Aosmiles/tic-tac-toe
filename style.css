@@ -1,0 +1,97 @@
+
+body {
+    font-family: monospace;
+    margin: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: black;
+    color: white;
+}
+
+.header__title {
+    font-size: 10rem;
+    line-height: .75;
+    padding: 10px;
+    margin: 0;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.controls__list {
+    text-align: center;
+}
+
+.controls__list_item {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.controls__btn {
+    background-color: white;
+    font-size: inherit;
+    border: none;
+    width: 75px;
+}
+
+.controls__btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+.controls__btn-reset {
+    border-top: 2px solid black;
+}
+
+.current-mark {
+    background-color: black;
+    color: white;
+}
+
+.controls__btn-reset {
+    font-size: 1rem;
+    padding-top: 3px;
+}
+
+
+
+.game {
+    display: grid;
+    gap: 5px;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    min-width: 350px;
+}
+
+.game__btn {
+    font-size: 2rem;
+    background-color: white;
+    border: 2px dotted black;
+    /*border: none;*/
+    /*box-shadow: 3px 3px black;*/
+}
+
+.game__btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.winner {
+    background-color: red;
+}
